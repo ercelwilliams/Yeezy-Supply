@@ -95,3 +95,41 @@ figure{
   text-align: center;
   padding-top: 90px;
 }
+
+.cart a{
+  background-color: aquamarine;
+  color: #777;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul{
+  float: right;
+  padding-right: 50px;
+
+}
+
+li{
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+li span{
+  padding: 5px;
+
+}
+
+li a{
+  padding: 5px;
+  background-color: aquamarine;
+  text-decoration: none;
+}
+
+.cart ion-icon{
+  vertical-align: bottom;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}

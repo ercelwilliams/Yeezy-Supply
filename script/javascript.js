@@ -8,17 +8,15 @@
 
 let a = "SHIPMENT STANDARD SHIPPING ON DOMESTIC ORDERS - PLEASE ALLOW 2-3 BUSINESS DAYS FOR YOUR ORDER TO PROCESS AND 3-5 DAYS TO SHIP.CHANGING SHIPPING ADDRESS SHIPPING ADDRESSES CANNOT BE CHANGED. WE WILL ONLY SHIP TO THE ADDRESS ENTERED WHEN THE ORDER WAS ORIGINALLY PLACED."
 let b = "WHAT ARE THE TERMS AND CONDITIONS? LAST UPDATED: JUNE 29, 2021 \nWELCOME TO WWW.YEEZYSUPPLY.COM (WEB SITE)."
-//let c = 
+let c = "THIS POLICY DESCRIBES THE INFORMATION WE COLLECT AND HOW WE USE AND DISCLOSE IT. BY VISITING OUR WEBSITE OR USING OUR SERVICES, YOU ARE ACCEPTING THE PRACTICES DESCRIBED IN THIS POLICY. IF YOU DO NOT AGREE TO THE TERMS"
+
+
 function myFunction1 (num) {
     alert(num +".   "+ a);
 }
 
-function myFunction2 (num) {
-    alert(num+"You called 'myFunction2()', with the argument: ");
-}
-
 function myFunction3 (num) {
-    alert("You called 'myFunction3()', with the argument: " + num);
+    alert(num+". " + c);
 }
 function myFunction4 (num) {
     alert(num+". " + b);
@@ -43,6 +41,11 @@ function buttonA (button) {
             return false;
     }
 }
+
+btnBack.addEventListener('click', () =>{
+    window.history.back();
+
+});
 
 // LAST UPDATED: JUNE 29, 2021 WELCOME TO WWW.YEEZYSUPPLY.COM (WEB SITE).\n
 // THIS WEB SITE IS OWNED BY YEEZY APPAREL LLC AND OPERATED BY ADIDAS AMERICA, INC. (COMPANY ADIDAS) (COLLECTIVELY WE AND US).\n
