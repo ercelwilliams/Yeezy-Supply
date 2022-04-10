@@ -97,7 +97,7 @@ figure{
 }
 
 .cart a{
-  background-color: aquamarine;
+  background-color: rgb(250, 248, 248);
   color: #777;
   cursor: pointer;
   text-decoration: none;
@@ -123,7 +123,7 @@ li span{
 
 li a{
   padding: 5px;
-  background-color: aquamarine;
+  background-color: #f9f3f3;
   text-decoration: none;
 }
 
@@ -132,4 +132,28 @@ li a{
   font-size: 20px;
   cursor: pointer;
   text-decoration: none;
+}
+figcaption{
+  font-size: 14px;
+}
+
+.add-cart {
+  position: absolute;
+  width: 100%;
+  background-color: darkgray;
+  transition: all 0.1 ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+.image:hover .cart1,
+.cart2,
+.cart3{
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
+
 }
