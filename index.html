@@ -10,6 +10,9 @@
 </head>
 <h1>HOME</h1>
 <body>
+    <input id="searchbar" onkeyup="search_sneaker()" type="text"
+        name="search" placeholder="Search Yeezy model..">
+
     <button class="b1" type="button" onclick="buttonA(this)" id="1">General Info</button>
 
     <form action="pages/contact.html">
@@ -22,26 +25,14 @@
     <form action="../Yeezy-Supply/pages/archive.html">
         <button type="submit" class="b5">Archive</button>
      </form>
-     <ul>
-         <li>
-            <a href="pages/cart.html">
-                <ion-icon name="bag-outline"></ion-icon>Cart <span>0</span>
-            </a>
-        </li>
-     </ul>
+   
      <div class="container">
      <figure>
         <img src="images/foam.jpg" alt="Foam" class="foam" width="25%">
         <figcaption> Yeezy Foam Runner "Mineral Blue" 
             <br>
             $80
-            <a class="cart1" href="#"> Add to Cart</a>
-      </figure>
-      <figure>
-        <img src="images/sulfur.jpg" alt="Foam" class="foam" width="25%">
-        <figcaption> Yeezy 450 "Sulfur" 
-            <br>
-            $200
+            <br> <br>
             <label> Size </label>
             <select>
                 <option>9</option>
@@ -52,13 +43,46 @@
                 <option>11.5</option>
                 <option>12</option>
             </select>
-            <a class="cart2" href="#"> Add to Cart</a>
+            <br>
+            <a class="cart1" href="#"> Add to Cart</a>
+            
+      </figure>
+      <figure>
+        <img src="images/sulfur.jpg" alt="Foam" class="foam" width="25%">
+        <figcaption> Yeezy 450 "Sulfur" 
+            <br>
+            $200
+            <br>
+            <label style="padding-top: 20px; padding-bottom: 20px;"> Size </label>
+            <select>
+                <option>9</option>
+                <option>9.5</option>
+                <option>10</option>
+                <option>10.5</option>
+                <option>11</option>
+                <option>11.5</option>
+                <option>12</option>
+            </select>
+            <br>
+            <a class="cart2" href="#" style="padding-top: 5px;"> Add to Cart</a>
       </figure>
       <figure>
         <img src="images/turtledove.png" alt="Foam" class="foam" width="25%">
         <figcaption> Yeezy 350 "Turtle Dove" 
             <br>
             $200
+            <br>
+            <label> Size </label>
+            <select>
+                <option>9</option>
+                <option>9.5</option>
+                <option>10</option>
+                <option>10.5</option>
+                <option>11</option>
+                <option>11.5</option>
+                <option>12</option>
+            </select>
+            <br>
             <button>Add to Cart</button>
       </figure>
 
