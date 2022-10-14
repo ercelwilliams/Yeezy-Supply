@@ -167,3 +167,13 @@ figcaption{
   padding-bottom: 50px;
   padding-left: 130px;
 }
+
+.contact {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.darkMode{
+  background-color: black;
+  color: white;
+}

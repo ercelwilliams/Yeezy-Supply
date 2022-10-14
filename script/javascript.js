@@ -47,6 +47,26 @@ btnBack.addEventListener('click', () =>{
 
 });
 
+function search_sneaker() {
+    let input = document.getElementById('searchbar').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('sneaker');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+}
+
+function darkMode(){
+    var element = document.body;
+    element.classList.toggle("darkMode");
+}
+
 // LAST UPDATED: JUNE 29, 2021 WELCOME TO WWW.YEEZYSUPPLY.COM (WEB SITE).\n
 // THIS WEB SITE IS OWNED BY YEEZY APPAREL LLC AND OPERATED BY ADIDAS AMERICA, INC. (COMPANY ADIDAS) (COLLECTIVELY WE AND US).\n
 // IN ADDITION TO THE CONTENT ON THE WEB SITE, THE WEB SITE PROVIDES YOU WITH VARIOUS SHOPPING, E-COMMERCE AND COMMUNITY SERVICES (“SERVICES”).\n
