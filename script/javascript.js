@@ -65,6 +65,8 @@ function search_sneaker() {
 function darkMode(){
     var element = document.body;
     element.classList.toggle("darkMode");
+
+    
 }
 
 // LAST UPDATED: JUNE 29, 2021 WELCOME TO WWW.YEEZYSUPPLY.COM (WEB SITE).\n

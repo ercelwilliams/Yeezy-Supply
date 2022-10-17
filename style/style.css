@@ -177,3 +177,11 @@ figcaption{
   background-color: black;
   color: white;
 }
+
+#searchbar{
+  float: right;
+}
+
+#pad, #pad2{
+  padding-top: 52px;
+}
