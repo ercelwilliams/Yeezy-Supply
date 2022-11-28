@@ -208,3 +208,16 @@ figcaption{
 
 }
 
+#product-grid{
+  text-align: center;
+  border: 3px solid green;
+}
+
+.tbl-cart{
+  border: .5px solid rgb(2, 32, 2);
+}
+
+#btnEmpty{
+  float: right;
+  width: 33.33%;
+}

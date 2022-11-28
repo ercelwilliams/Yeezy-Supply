@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script src="script/javascript.js"></script>
+    <script src="script/cart.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +12,10 @@
 </head>
 <h1>HOME</h1>
 <body>
-    <button class = "darkMode" onclick="darkMode()" style="position: sticky;"> Click for Dark Mode </button> <br>
-    <input id="searchbar" onkeyup="search_sneaker()" type="text"
-        name="search" placeholder="Search Yeezy model..">
+    <button class = "darkMode" onclick="darkMode()" style="position: sticky;"> Click for Dark Mode </button> 
+    <br>
+    <!-- <input id="searchbar" onkeyup="search_sneaker()" type="text"
+        name="search" placeholder="Search Yeezy model.."> -->
 
     <button class="button b1" type="button" onclick="buttonA(this)" id="1">General Info</button>
 
@@ -28,7 +31,35 @@
      </form>
    
      <div class="container">
-       <figure>
+        <a onClick="emptyCart()" id="btnEmpty">Empty Cart</a>
+        <table class="tbl-cart" cellpadding="5" cellspacing="5">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th class='text-right' width="10%">Unit Price</th>
+                    <th class='text-right' width="5%">Quantity</th>
+                    <th class='text-right' width="10%">Sub Total</th>
+                </tr>
+            </thead>
+            <!--  Cart table to load data on "add to cart" action -->
+            <tbody id="cartTableBody">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="text-right">Total:</td>
+                    <td id="itemCount" class="text-right" colspan="2"></td>
+                    <td id="totalAmount" class="text-right"></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div id="product-grid">
+            <div class="txt-heading">
+				<h1>Products</h1>
+			</div>
+			<div id="product-item-container"></div>
+		</div>
+       <!-- <figure>
         <img src="images/foam.jpg" alt="Foam" class="sneaker" width="25%">
         <figcaption> Yeezy Foam Runner "Mineral Blue" 
             <br>
@@ -87,13 +118,14 @@
             <br>
             <button>Add to Cart</button>
       </figure>
-    </ol>
-    </div>
+    </ol> -->
+        </div>
+</div>
       <!-- <div class="center">
       <img src="images/foam.jpg" alt="Foam" width="25%" height="25%">
       <h3>Yeezy Foam Runner "Mineral Blue" </h3>
     </div> -->
-    <script src="script/cart.js"></script>
+    
     
 
 
