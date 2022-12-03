@@ -12,7 +12,7 @@
 </head>
 <h1>HOME</h1>
 <body>
-    <button class = "darkMode" onclick="darkMode()" style="position: sticky;"> Click for Dark Mode </button> 
+    <button class = "darkMode" onclick="darkMode()"> Click for Dark Mode </button> 
     <br>
     <!-- <input id="searchbar" onkeyup="search_sneaker()" type="text"
         name="search" placeholder="Search Yeezy model.."> -->
@@ -31,11 +31,12 @@
      </form>
    
      <div class="container">
+        <div class="cart">
         <a onClick="emptyCart()" id="btnEmpty">Empty Cart</a>
         <table class="tbl-cart" cellpadding="5" cellspacing="5">
             <thead>
                 <tr>
-                    <th>Name</th>
+                    <th style="float: left;">Name</th>
                     <th class='text-right' width="10%">Unit Price</th>
                     <th class='text-right' width="5%">Quantity</th>
                     <th class='text-right' width="10%">Sub Total</th>
@@ -52,6 +53,7 @@
                 </tr>
             </tfoot>
         </table>
+    </div>
 
         <div id="product-grid">
             <div class="txt-heading">
@@ -59,79 +61,8 @@
 			</div>
 			<div id="product-item-container"></div>
 		</div>
-       <!-- <figure>
-        <img src="images/foam.jpg" alt="Foam" class="sneaker" width="25%">
-        <figcaption> Yeezy Foam Runner "Mineral Blue" 
-            <br>
-            $80
-            <br> <br>
-            <label> Size </label>
-            <select>
-                <option>9</option>
-                <option>9.5</option>
-                <option>10</option>
-                <option>10.5</option>
-                <option>11</option>
-                <option>11.5</option>
-                <option>12</option>
-            </select>
-            <br>
-            <a class="cart1" href="#"> Add to Cart</a>
-            
-      </figure>
-   
-      <figure>
-        <img src="images/sulfur.jpg" alt="Foam" class="sneaker" width="25%">
-        <figcaption> Yeezy 450 "Sulfur" 
-            <br>
-            $200
-            <br> <br>
-            <label style="padding-top: 20px; padding-bottom: 20px;"> Size </label>
-            <select>
-                <option>9</option>
-                <option>9.5</option>
-                <option>10</option>
-                <option>10.5</option>
-                <option>11</option>
-                <option>11.5</option>
-                <option>12</option>
-            </select>
-            <br>
-            <a class="cart2" href="#" style="padding-top: 5px;"> Add to Cart</a>
-      </figure>
-      <figure>
-        <img src="images/turtledove.png" alt="Foam" class="sneaker" width="25%">
-        <figcaption> Yeezy 350 "Turtle Dove" 
-            <br>
-            $200
-            <br> <br>
-            <label> Size </label>
-            <select>
-                <option>9</option>
-                <option>9.5</option>
-                <option>10</option>
-                <option>10.5</option>
-                <option>11</option>
-                <option>11.5</option>
-                <option>12</option>
-            </select>
-            <br>
-            <button>Add to Cart</button>
-      </figure>
-    </ol> -->
         </div>
 </div>
-      <!-- <div class="center">
-      <img src="images/foam.jpg" alt="Foam" width="25%" height="25%">
-      <h3>Yeezy Foam Runner "Mineral Blue" </h3>
-    </div> -->
-    
-    
-
-
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>

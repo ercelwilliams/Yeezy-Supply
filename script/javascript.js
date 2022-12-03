@@ -66,6 +66,8 @@ function darkMode(){
     var element = document.body;
     element.classList.toggle("darkMode");
 
+    if (this.value=="Click for Dark Mode") this.value = "Click for Light Mode";
+    else this.value = "Click for Dark Mode";
     
 }
 
